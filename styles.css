@@ -581,10 +581,25 @@ section { padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 4rem); position: re
 .arch-layer-title svg { width: 14px; height: 14px; color: var(--slate-500); flex-shrink: 0; }
 .arch-techs { display: flex; gap: 8px; flex-wrap: wrap; }
 .arch-tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: var(--white);
   border: 1.5px solid var(--border);
-  border-radius: 7px; padding: 4px 12px;
-  font-size: 0.8rem; font-weight: 600; color: var(--text);
+  border-radius: 7px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.arch-tech-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.arch-tech svg.arch-tech-icon {
+  color: var(--slate-600);
 }
 .arch-arrow {
   display: flex; justify-content: center; align-items: center;
